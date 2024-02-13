@@ -6,13 +6,22 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: 'class',
+  future: {
+    hoverOnlyWhenSupported: true
+  },
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+      colors: {
+        prim: {
+          DEFAULT: 'hsl(231, 69%, 60%)',
+          100: 'hsl(0, 94%, 66%)'
+        },
+        neut: {
+          DEFAULT: 'hsl(229, 8%, 60%)',
+          100: 'hsl(229, 31%, 21%)'
+        }
+      }
     },
   },
   plugins: [],
